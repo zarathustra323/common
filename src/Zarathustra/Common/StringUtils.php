@@ -1,7 +1,8 @@
 <?php
-namespace Zarathustra/Common;
 
-class String
+namespace Zarathustra\Common;
+
+class StringUtils
 {
     /**
      * Convert word into underscore format (e.g. some_name_here).
