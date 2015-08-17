@@ -1,0 +1,20 @@
+{
+    "name": "zarathustra/common",
+    "license": "Apache-2.0",
+    "type": "library",
+    "description": "Common PHP Utility Classes for use by other components/packages.",
+    "authors": [
+        {
+            "name": "Jacob Bare",
+            "email": "jbare@southcomm.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Zarathustra\\Common": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.4"
+    }
+}
