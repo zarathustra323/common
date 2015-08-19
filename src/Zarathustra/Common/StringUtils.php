@@ -13,6 +13,13 @@ class StringUtils
      */
     public static function underscore($word)
     {
+        if (false !== stristr($word, '-')) {
+            $parts = explode('-', $word);
+            foreach ($parts as &$part) {
+                $part = ucfirst(strtolower($part));
+            }
+            $word = implode('', $parts);
+        }
         return strtolower(preg_replace('~(?<=\\w)([A-Z])~', '_$1', $word));
     }
     /**
